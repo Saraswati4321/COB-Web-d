@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
+
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+body{
+    min-height: 80vh;
+    
+    align-items: centre;
+    justify-content: center;
+    background-color: rgb(121, 121, 236);
+}
+.main{
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 15px;
+    margin:20px 50px;
+    background-color: aliceblue;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+
+}
+.main h4{
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+}
+h4{
+    text-decoration-line:underline ;
+    text-decoration-color:rgb(121, 121, 236) ;
+    
+}
+.main form{
+    position: relative;
+    min-height: 490px;
+    margin-top: 20px;
+    background-color: aliceblue;
+}
+.main form .form{
+    position: absolute;
+    background-color: aliceblue;
+}
+
+.main form .details{
+  margin-top: 30px;
+}
+.main form .details.ID{
+    margin-top: 10px;
+  }
+.main form .title{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 500px;
+    margin: 6px 0;
+    color: #333;
+}
+.main form .fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+form .fields .input-fields{
+       display: flex;
+       width: calc(100% /3 - 15px);
+       flex-direction: column;
+       margin: 8px 0;
+}
+.input-fields label{
+    font-size: 17px;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+.input-fields input{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 32px;
+    margin: 8px 0;
+}
+.input-fields input:is(:focus,:valid){
+    box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+}
+.input-fields input[type="date"]{
+    color: #707070;
+}
+.input-fields input[type="date"]:valid{
+    color: #333;
+}
+.main form button,.backBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: aliceblue;
+    border-radius: 5px;
+    margin: 25px 0;
+    background-color:rgb(121, 121, 236) ;
+    cursor: pointer;
+}
+form button:hover{
+    background-color:#265df2 ;
+}
+.btnText{
+    font-size: 20px;
+}
+form .buttons{
+    display: flex;
+    align-items: center;
+}
+form .buttons button,.backBtn{
+    margin-right: 14px;
+}
+@media  (max-width:1000px){
+    .main{
+        max-width: 850px;
+
+    }
+}
+@media  (max-width:950px){
+    .main{
+        max-width: 800px;
+
+    }
+}
+@media  (max-width:900px){
+    .main{
+        max-width: 750px;
+
+    }
+}
+@media  (max-width:850px){
+    .main{
+        max-width: 700px;
+
+    }
+}@media  (max-width:800px){
+    .main{
+        max-width: 650px;
+
+    }
+}@media  (max-width:750px){
+    .main{
+        max-width: 600px;
+
+    }
+}@media  (max-width:700px){
+    .main{
+        max-width: 550px;
+
+    }
+}@media  (max-width:650px){
+    .main{
+        max-width: 500px;
+
+    }
+}
+@media  (max-width:600px){
+    .main{
+        max-width: 450px;
+
+    }
+}@media  (max-width:550px){
+    .main{
+        max-width: 400px;
+
+    }
+}
